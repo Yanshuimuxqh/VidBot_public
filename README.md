@@ -45,7 +45,7 @@
 第一次运行时，会在 C:\用户\用户名\.cache\whisper 下下载大小约为 140MB 的 base 模型，请耐心等待。
 恭喜成功完成 Whisper 的本地部署！
 
-###ChatGLM2-6B量化int4本地部署
+### ChatGLM2-6B量化int4本地部署
 1.以管理员运行Anaconda PowerShell
 2.输入以下命令激活环境：
 ```shell
