@@ -4,16 +4,17 @@
 - 安装好 Git
 - 安装好 Chocolatey
 - 通畅的网络连接
-
+  
 下面为具体操作
 ### GetAudio环境部署
+
 1. 打开 Anaconda PowerShell Prompt（以管理员身份运行）。
 
 2. 输入以下命令创建虚拟环境，替换 `your-env-name` 为你自己对这个环境的命名，例如：`test_py3.11`。
-   ```shell
+```shell
    conda create -n your-env-name python==3.11
    ```
-   输入 'y' 以确认创建该环境
+输入 'y' 以确认创建该环境<br>
 3.输入以下命令激活环境：
    ```shell
    conda activate your-env-name
@@ -44,7 +45,20 @@
 第一次运行时，会在 C:\用户\用户名\.cache\whisper 下下载大小约为 140MB 的 base 模型，请耐心等待。
 恭喜成功完成 Whisper 的本地部署！
 
-
+###ChatGLM2-6B量化int4本地部署
+1.以管理员运行Anaconda PowerShell
+2.输入以下命令激活环境：
+```shell
+conda activate your-env-name
+```
+3.使用以下命令安装依赖项:
+```shell
+pip install protobuf cpm_kernels transformers==4.30.2 gradio mdtex2html sentencepiece accelerate sse-starlette streamlit>=1.24.0
+```
+4.输入以下命令安装`bigdl-llm`库用于量化模型：
+```shell
+pip install --pre --upgrade bigdl-llm[all]
+```
 
 
 
