@@ -19,6 +19,36 @@
    conda activate your-env-name
    ```
 4.输入以下命令拉取和安装最新的仓库：
-  ```shell
-pip install git+https://github.com/openai/whisper.git
-```
+   ```shell
+   pip install git+https://github.com/openai/whisper.git
+   ```
+可能会遇到网络问题导致的报错，可以尝试使用代理，节点选择香港。也可能需要更新 setuptools
+   ```shell
+   pip install --upgrade setuptools
+   ```
+完成了上述的步骤后等待大约五分钟
+5.输入以下命令更新版本：
+   ```shell
+   pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+   ```
+6.安装 FFmpeg：
+   ```shell
+   choco install ffmpeg
+   ```
+7.安装Rust
+   ```shell
+   pip install setuptools-rust
+   ```
+要运行语音转文字项目，打开 StreamTextPro，打开 GetAudio，运行 GetTransform，输入正在观看的 B 站网页，在 audio_reserve 文件夹下查看转换后的文本。
+可能会遇到路径错误，需要修改相对路径为绝对路径。
+第一次运行时，会在 C:\用户\用户名\.cache\whisper 下下载大小约为 140MB 的 base 模型，请耐心等待。
+恭喜成功完成 Whisper 的本地部署！
+
+
+
+
+
+
+
+
+
