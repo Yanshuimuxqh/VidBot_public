@@ -1,3 +1,8 @@
+StreamTextPro后端流程图
+![streamtextpro drawio](https://github.com/Yanshuimuxqh/StreamTextPro_public/assets/136095349/cbd601cf-e569-4e36-aaaa-11112bfcc07a)
+
+
+
 # streamtextpro后端部署流程 
 ## 前置条件
 - 安装好 Anaconda
